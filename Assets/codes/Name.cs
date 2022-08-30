@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Name : MonoBehaviour
 {
@@ -14,8 +15,8 @@ public class Name : MonoBehaviour
     public List<string> studentNames;
     public List<string> teamNumber;
 
-    public Text nameText;
-    public Text teamText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI teamText;
 
     void Start()
     {
@@ -79,7 +80,7 @@ public class Name : MonoBehaviour
             nameText.text = studentNames[i];
             teamText.text = "#"+teamNumber[i];
 
-            int width = 850;
+            int width = 1000;
             int height = 550;
             int startX = 0;
             int startY = 0;
